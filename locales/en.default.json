@@ -58,7 +58,7 @@
       "no_results": "Sorry, we couldn't find any results"
     },
     "search": {
-      "title": "Search",
+      "title": "What are you looking for?",
       "results_with_count": {
         "one": "We found {{ count }} result",
         "other": "We found {{ count }} results"
@@ -472,6 +472,9 @@
       "pickup_point": {
         "search_button": "What are you looking for?"
       }
+    },
+    "page_titles": {
+      "search": "What are you looking for?"
     }
   }
 }
