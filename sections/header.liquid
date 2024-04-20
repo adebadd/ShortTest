@@ -135,6 +135,31 @@
       <div class="logo-area__right">
         <div class="logo-area__right__inner">
           {% if shop.customer_accounts_enabled %}
+            {% if section.settings.enable_search %}
+              <!-- Begin Main Search Integration -->
+              <div class="main-search">
+                <div class="main-search__container">
+                  <form class="main-search__form" action="{{ routes.search_url }}" method="get" autocomplete="off">
+                    <input type="hidden" name="type" value="{{ settings.search_type }}" />
+                    <input type="hidden" name="options[prefix]" value="last" />
+                    <div class="main-search__input-container">
+                      <input
+                        class="main-search__input"
+                        type="text"
+                        name="q"
+                        autocomplete="off"
+                        placeholder="{{ 'layout.search.placeholder' | t | escape }}"
+                        aria-label="{{ 'layout.search.title' | t | escape }}"
+                        value="{{ search.terms | escape }}" />
+                      <button class="main-search__button button notabutton" type="submit" aria-label="{{ 'layout.header.search_submit' | t }}">
+                        {% render 'svg-search' %}
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- End Main Search Integration -->
+            {% endif %}
             {% if customer %}
               <a class="header-account-link" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
                 <span class="header-account-link__text desktop-only{% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">{{ 'layout.customer.account' | t | escape }}</span>
