@@ -222,9 +222,9 @@
       "label": "Sign up for our newsletter"
     },
     "search": {
-      "open": "Search",
+      "open": "What are you looking for?",
       "close": "Close",
-      "placeholder": "Search...",
+      "placeholder": "What are you looking for?",
       "title": "Search Store"
     },
     "customer": {
@@ -474,7 +474,7 @@
       }
     },
     "page_titles": {
-      "search": "What are you looking for?"
+      "search": "Search"
     }
   }
 }
