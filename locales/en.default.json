@@ -470,7 +470,7 @@
   "shopify": {
     "checkout": {
       "pickup_point": {
-        "search_button": "What are you looking for?"
+        "search_button": "Search"
       }
     },
     "page_titles": {
